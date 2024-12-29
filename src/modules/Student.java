@@ -41,7 +41,7 @@ public class Student extends Person {
     }
     @Override
     public String toString() {
-        String message = super.toString() + " I am a student with ID " + this.getStudentId();;
+        String message = super.toString() + " I am a student, my ID is " + this.getStudentId();;
         return message;
     }
 

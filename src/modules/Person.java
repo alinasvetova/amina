@@ -48,7 +48,7 @@ public class Person {
 
     @Override
     public String toString() {
-        String genderStr = gender ? "male" : "female";
-        return "Hi, I am " + this.getName() + " " + this.getSurname() + ", a " + this.getAge() + " years old " + genderStr + ".";
+        String genderStr = gender ? "female" : "male";
+        return " " + this.getName() + " " + this.getSurname() + " " + this.getAge() + " " + genderStr + ".";
     }
 }

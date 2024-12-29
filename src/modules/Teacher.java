@@ -1,13 +1,13 @@
 package modules;
 
 public class Teacher extends Person {
-    private String course;
+    private String subject;
     private int yearsOfExperience;
     private double salary;
 
-    public Teacher(String name, String surname, int age, boolean gender, String course, int yearsOfExperience, int salary) {
+    public Teacher(String name, String surname, int age, boolean gender, String subject, int yearsOfExperience, int salary) {
         super(name, surname, age, gender);
-        this.course = course;
+        this.subject = subject;
         this.yearsOfExperience = yearsOfExperience;
         this.salary = salary;
     }
@@ -20,12 +20,12 @@ public class Teacher extends Person {
         this.salary = salary;
     }
 
-    public String getCourse() {
-        return course;
+    public String getSubject() {
+        return subject;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
     public int getYearsOfExperience() {
@@ -42,6 +42,6 @@ public class Teacher extends Person {
 
     @Override
     public String toString() {
-        return super.toString() + " I teach " + this.getCourse() + " with salary: " + this.getSalary();
+        return super.toString() + " My subject is " + this.getSubject() + " and my salary is: " + this.getSalary();
     }
 }
